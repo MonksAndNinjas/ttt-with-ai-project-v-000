@@ -47,10 +47,6 @@ module Players
         if current_player.class == String
           if current_player == self.token
             scores.max_by { |_k, v| v }
-<<<<<<< HEAD
-
-=======
->>>>>>> 19bb005385aa1fc0df559fd1ea45423209725191
           else
             scores.min_by { |_k, v| v }
           end
@@ -65,7 +61,6 @@ module Players
       end
 
       def score(board)
-<<<<<<< HEAD
         if board.winner == self.token
           10
         elsif board.winner == self.switch(self)
