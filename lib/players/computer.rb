@@ -7,7 +7,6 @@ module Players
 
 
       def move(board)
-<<<<<<< HEAD
         pos_num = self.minmax(board, self)
         @best_choice[0].to_s
       end
