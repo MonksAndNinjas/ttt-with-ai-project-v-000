@@ -14,6 +14,7 @@ module Players
       def minmax(board, current_player)
         if board.won? != nil or board.full? == true
           return score(board)
+        end
         pos_num = minmax(board, self)
         pos_num
       end
