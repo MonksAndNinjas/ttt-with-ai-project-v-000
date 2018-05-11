@@ -55,6 +55,9 @@ class Game
     if self.over? == false
       self.turn
     end
+    if self.over? == false
+      self.turn
+    end
     until self.over? == true
       self.turn
     end
