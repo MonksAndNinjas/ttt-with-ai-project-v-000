@@ -56,7 +56,7 @@ class Game
   end
 
   def play
-    while !over?
+    while !over? or !won?
       turn
     end
     if won?
