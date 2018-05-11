@@ -51,7 +51,7 @@ class Game
 
   def play
     while !over?
-      turn
+      self.turn
     end
 
     puts "Congratulations #{self.winner}!" if self.won? != nil
