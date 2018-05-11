@@ -7,7 +7,7 @@ module Players
 
 
       def move(board)
-        self.minmax(board, self)
+        pos_num = self.minmax(board, self)
         @best_choice[0].to_s
       end
 
