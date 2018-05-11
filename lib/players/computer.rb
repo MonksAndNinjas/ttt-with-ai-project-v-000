@@ -26,8 +26,6 @@ module Players
         end
 
         @best_choice, best_score = self.best_move(current_player, scores)
-        best_score = self.best_move(current_player, scores)
-
         best_score
       end
 
