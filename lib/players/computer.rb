@@ -20,7 +20,7 @@ module Players
       end
 
       def minmax(board, current_player)
-        if board.over? == true
+        if board.full? == true or board.won? != nil
           return scores(board)
         end
 
