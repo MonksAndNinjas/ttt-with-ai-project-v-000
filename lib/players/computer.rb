@@ -15,7 +15,6 @@ module Players
       def minmax(board, current_player)
         if board.won? != nil or board.full? == true
           return score(board)
-=======
         pos_num = minmax(board, self)
         pos_num
       end
@@ -23,7 +22,6 @@ module Players
       def minmax(board, current_player)
         if board.over? == true
           return scores(board)
->>>>>>> 19bb005385aa1fc0df559fd1ea45423209725191
         end
 
         scores = {}     #{ :position_number => }
