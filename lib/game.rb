@@ -41,13 +41,18 @@ class Game
   end
 
   def turn
-    pos_num = self.current_player.move(self.board)
-      until self.board.valid_move?(pos_num) == true
-        pos_num = self.current_player.move(self.board)
-      end
-    self.board.update(pos_num, self.current_player)
-    self.board.display
-    puts "#{self.current_player.token} moved #{pos_num}"
+    player = current_player
+    current_move = player.move(@board)
+    if !@board.valid_move?(current_move)
+      turn
+    else
+      puts "Turn: #{@board.turn_count+1}\n"
+      @board.display
+      @board.update(current_move, player)
+      puts "#{player.token} moved #{current_move}"
+      @board.display
+      puts "\n\n"
+    end
   end
 
   def play
