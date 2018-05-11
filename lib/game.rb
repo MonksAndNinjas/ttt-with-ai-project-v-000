@@ -50,7 +50,7 @@ class Game
   end
 
   def play
-    while !over?
+    while self.over? == false
       self.turn
     end
 
