@@ -53,6 +53,9 @@ class Game
     if self.over? == false
       self.turn
     end
+    until self.over? == true
+      self.turn
+    end
 
     puts "Congratulations #{self.winner}!" if self.won? != nil
     puts "Cat's Game!" if self.draw? == true
