@@ -54,7 +54,7 @@ class Board
       else
         @cells[pos_num.to_i-1] = player.token
       end
-      @pos_num =  pos_num.to_i
+
     end
   end
 
