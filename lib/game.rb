@@ -50,11 +50,8 @@ class Game
   end
 
   def play
-    if self.over? == false
-      self.turn
-    end
-    until self.over? == true
-      self.turn
+    while !over?
+      turn
     end
 
     puts "Congratulations #{self.winner}!" if self.won? != nil
