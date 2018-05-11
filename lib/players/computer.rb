@@ -70,12 +70,6 @@ module Players
           10
         elsif board.winner == self.switch(self)
           -10
-=======
-        if board.winner == piece
-          return 10
-        elsif board.winner == @opponent
-          return -10
->>>>>>> 19bb005385aa1fc0df559fd1ea45423209725191
         end
         0
       end

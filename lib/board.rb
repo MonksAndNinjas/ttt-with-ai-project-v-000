@@ -84,5 +84,3 @@ class Board
      self.cells[self.won?[0]] if self.won? != nil
    end
 end
-
-
