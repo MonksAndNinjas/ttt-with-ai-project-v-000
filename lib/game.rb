@@ -47,6 +47,7 @@ class Game
       end
     self.board.update(pos_num, self.current_player)
     self.board.display
+    puts "#{player.token} moved #{current_move}"
   end
 
   def play
