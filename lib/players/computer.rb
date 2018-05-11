@@ -35,11 +35,9 @@ module Players
           scores[pos_num] = self.minmax(potential_board, self.switch(current_player))
         end
 
-<<<<<<< HEAD
         @best_choice, best_score = self.best_move(current_player, scores)
-=======
         best_score = self.best_move(current_player, scores)
->>>>>>> 19bb005385aa1fc0df559fd1ea45423209725191
+
         best_score
       end
 
